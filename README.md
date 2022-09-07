@@ -10,7 +10,8 @@ Login to the personal account of the client, manager or director
 ### Client function selection
 ![image](https://user-images.githubusercontent.com/71980083/188818989-b0cf4685-6e57-450a-ab8b-deac19029cfe.png)
 
-For example, here is how client can view his current tariffs linked to his numbers and view tariffs for his customer account
+For example, here is how client can view his current tariffs linked to his numbers and view tariffs for 
+his customer account
 ![image](https://user-images.githubusercontent.com/71980083/188819781-a7ac4fcf-3ab8-47f2-8e38-2803170dd647.png)
 ![image](https://user-images.githubusercontent.com/71980083/188820589-fa7f9312-1c28-4c4b-9544-b6d8343211ee.png)
 
