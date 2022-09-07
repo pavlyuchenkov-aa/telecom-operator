@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{156E93D4-3262-4641-ADF1-8708CF9EA961}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Client\ClientBuyViewAdditionalService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Client\ClientBuyViewAdditionalService.Designer.cs">
+      <DependentUpon>ClientBuyViewAdditionalService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Client\ClientChangeTariff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Client\ClientChangeTariff.Designer.cs">
+      <DependentUpon>ClientChangeTariff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Client\ClientViewAvailableNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Client\ClientViewAvailableNumbers.Designer.cs">
+      <DependentUpon>ClientViewAvailableNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Client\ClientViewCurrentTarifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Client\ClientViewCurrentTarifs.Designer.cs">
+      <DependentUpon>ClientViewCurrentTarifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Client\ClientViewPersonalData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Client\ClientViewPersonalData.Designer.cs">
+      <DependentUpon>ClientViewPersonalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Client\ClientViewTarifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Client\ClientViewTarifs.Designer.cs">
+      <DependentUpon>ClientViewTarifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorEditPhoneNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorEditPhoneNumbers.Designer.cs">
+      <DependentUpon>DirectorEditPhoneNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorFunctions.Designer.cs">
+      <DependentUpon>DirectorFunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorManageAdditionalService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorManageAdditionalService.Designer.cs">
+      <DependentUpon>DirectorManageAdditionalService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorManageAdditionalServiceNewSerice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorManageAdditionalServiceNewSerice.Designer.cs">
+      <DependentUpon>DirectorManageAdditionalServiceNewSerice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorManagerPersonalDataEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorManagerPersonalDataEditView.Designer.cs">
+      <DependentUpon>DirectorManagerPersonalDataEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorPersonalDataEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorPersonalDataEditView.Designer.cs">
+      <DependentUpon>DirectorPersonalDataEditView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorRegisterManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorRegisterManager.Designer.cs">
+      <DependentUpon>DirectorRegisterManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorTariffManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorTariffManage.Designer.cs">
+      <DependentUpon>DirectorTariffManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorTariffManageAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorTariffManageAddNew.Designer.cs">
+      <DependentUpon>DirectorTariffManageAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorTariffManageChangeTariff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Director\DirectorTariffManageChangeTariff.Designer.cs">
+      <DependentUpon>DirectorTariffManageChangeTariff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerAddClientPhoneNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerAddClientPhoneNumber.Designer.cs">
+      <DependentUpon>ManagerAddClientPhoneNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerBlockUnblockAbonent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerBlockUnblockAbonent.Designer.cs">
+      <DependentUpon>ManagerBlockUnblockAbonent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerEditNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerEditNumbers.Designer.cs">
+      <DependentUpon>ManagerEditNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerEditViewClientPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerEditViewClientPersonal.Designer.cs">
+      <DependentUpon>ManagerEditViewClientPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerFunctions.Designer.cs">
+      <DependentUpon>ManagerFunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerRegisterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerRegisterClient.Designer.cs">
+      <DependentUpon>ManagerRegisterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerViewPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerViewPersonal.Designer.cs">
+      <DependentUpon>ManagerViewPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerViewTariff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Manager\ManagerViewTariff.Designer.cs">
+      <DependentUpon>ManagerViewTariff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Client\ClientFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Client\ClientFunctions.designer.cs">
+      <DependentUpon>ClientFunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Client\ClientBuyViewAdditionalService.resx">
+      <DependentUpon>ClientBuyViewAdditionalService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Client\ClientChangeTariff.resx">
+      <DependentUpon>ClientChangeTariff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Client\ClientFunctions.resx">
+      <DependentUpon>ClientFunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Client\ClientViewAvailableNumbers.resx">
+      <DependentUpon>ClientViewAvailableNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Client\ClientViewCurrentTarifs.resx">
+      <DependentUpon>ClientViewCurrentTarifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Client\ClientViewPersonalData.resx">
+      <DependentUpon>ClientViewPersonalData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Client\ClientViewTarifs.resx">
+      <DependentUpon>ClientViewTarifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorEditPhoneNumbers.resx">
+      <DependentUpon>DirectorEditPhoneNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorFunctions.resx">
+      <DependentUpon>DirectorFunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorManageAdditionalService.resx">
+      <DependentUpon>DirectorManageAdditionalService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorManageAdditionalServiceNewSerice.resx">
+      <DependentUpon>DirectorManageAdditionalServiceNewSerice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorManagerPersonalDataEditView.resx">
+      <DependentUpon>DirectorManagerPersonalDataEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorPersonalDataEditView.resx">
+      <DependentUpon>DirectorPersonalDataEditView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorRegisterManager.resx">
+      <DependentUpon>DirectorRegisterManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorTariffManage.resx">
+      <DependentUpon>DirectorTariffManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorTariffManageAddNew.resx">
+      <DependentUpon>DirectorTariffManageAddNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Director\DirectorTariffManageChangeTariff.resx">
+      <DependentUpon>DirectorTariffManageChangeTariff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerAddClientPhoneNumber.resx">
+      <DependentUpon>ManagerAddClientPhoneNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerBlockUnblockAbonent.resx">
+      <DependentUpon>ManagerBlockUnblockAbonent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerEditNumbers.resx">
+      <DependentUpon>ManagerEditNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerEditViewClientPersonal.resx">
+      <DependentUpon>ManagerEditViewClientPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerFunctions.resx">
+      <DependentUpon>ManagerFunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerRegisterClient.resx">
+      <DependentUpon>ManagerRegisterClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerViewPersonal.resx">
+      <DependentUpon>ManagerViewPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Manager\ManagerViewTariff.resx">
+      <DependentUpon>ManagerViewTariff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
